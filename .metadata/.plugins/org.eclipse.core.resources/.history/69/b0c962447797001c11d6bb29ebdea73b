@@ -1,0 +1,29 @@
+package com.aprendiendo.springboot.di.app.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.aprendiendo.springboot.di.app.models.service.IMiServicio;
+import com.aprendiendo.springboot.di.app.models.service.MiServicioService;
+
+@Controller
+public class FacturaController {
+
+	
+	
+	@GetMapping({"","/","index"})
+	public String index(Model model) {
+		
+		model.addAttribute("factura", factura);
+		return "index";
+	}
+
+	
+	
+	
+	
+}

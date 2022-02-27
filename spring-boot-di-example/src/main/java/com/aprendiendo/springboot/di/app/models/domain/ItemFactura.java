@@ -16,6 +16,10 @@ public class ItemFactura {
 	public void setCantidad(int cantidad) {
 		this.cantidad = cantidad;
 	}
+	public ItemFactura(Producto producto, int cantidad) {
+		this.producto = producto;
+		this.cantidad = cantidad;
+	}
 	
 	
 	

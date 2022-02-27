@@ -1,9 +1,9 @@
 package com.aprendiendo.springboot.di.app.models.domain;
 
 public class Producto {
-	
+
 	private String nombre;
-	
+
 	private double precio;
 
 	public String getNombre() {
@@ -22,5 +22,9 @@ public class Producto {
 		this.precio = precio;
 	}
 
-	
+	public Producto(String nombre, double precio) {
+		this.nombre = nombre;
+		this.precio = precio;
+	}
+
 }
