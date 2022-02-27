@@ -1,0 +1,5 @@
+server.port:8090
+#Valores por Propiedades y anotacion VALUE
+texto.indexcontroller.index.titulo=Aprendiendo Spring Boot
+texto.indexcontroller.perfil.titulo=Perfil de 
+texto.indexcontroller.listar.titulo=Lista de Usuarios

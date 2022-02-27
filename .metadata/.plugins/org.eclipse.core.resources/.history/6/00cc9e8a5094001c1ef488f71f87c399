@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title th:text="${title}">COntrolador Index</title>
+</head>
+<body>
+<h2 th:text="${title}"></h2>
+
+<p th:text="${usuario.nombre+' '+usuario.apellido}"></p>
+<p th:if="${usuario.email}" th:text="${usuario.email}"></p>
+<p th:if="${usuario.email== null}" th:text="'El usuario no tiene email.'"></p>
+
+</body>
+</html>

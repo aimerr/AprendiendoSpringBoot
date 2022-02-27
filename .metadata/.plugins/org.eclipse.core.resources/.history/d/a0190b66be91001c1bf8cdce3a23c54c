@@ -1,0 +1,34 @@
+package com.aprendiendo.springboot.web.app.controllers;
+
+import java.util.Map;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class IndexController {
+
+	
+	//@RequestMapping(value = "/index", method = RequestMethod.GET)
+	@GetMapping({"/index","/","home"})
+	public String index(Model model, ModelMap modelMap, Map<String, Object> map) {
+		
+		model.addAttribute("title", "Aprendiendo Spring Boot");
+		modelMap.addAttribute("titleMap", "ModelMap");
+		map.put("map", "Map Java");		
+		
+		return "index";
+	}
+	@GetMapping({"/index1","home1"})
+	public ModelAndView index2(ModelAndView modelAndView) {
+		
+		modelAndView.addObject("title","Aprendiendo Spring MODELANDVIEW");
+		modelAndView.setViewName("index");
+		
+		return modelAndView;
+	}	
+	
+}

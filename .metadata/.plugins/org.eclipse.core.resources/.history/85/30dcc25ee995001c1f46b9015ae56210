@@ -1,0 +1,12 @@
+package com.aprendiendo.springboot.di.app.services;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class MiServicioService {
+
+	public String operacion() {
+		
+		return "ejecutando algún proceso importante...";
+	}
+}

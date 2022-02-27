@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title th:text="${title}"></title>
+
+</head>
+<body>
+<h1 class="color-rojo">Hola Spring Boot.</h1>
+<h2 class="color-azul" th:text="${title}"></h2>
+<p th:text="${model}"></p>
+<p th:text="${modelMap}"></p>
+<p th:text="${map}"></p>
+</body>
+</html>

@@ -1,0 +1,5 @@
+Para empaquetar - Debemos estar en la ruta del proyecto 
+./mvnw package
+
+Subir jar - Debemos estar en la carpeta donde esta el jar o apuntar a ella
+java -jar spring-boot-web-01-0.0.1-SNAPSHOT.jar

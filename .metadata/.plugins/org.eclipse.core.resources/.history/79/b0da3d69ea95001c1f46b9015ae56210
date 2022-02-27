@@ -1,0 +1,22 @@
+package com.aprendiendo.springboot.di.app.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.aprendiendo.springboot.di.app.services.MiServicioService;
+
+@Controller
+public class IndexController {
+
+	@Autowired
+	private MiServicioService miServicioService;
+	
+	@GetMapping({"","/","index"})
+	public String index(Model model) {
+		
+		model.addAttribute("objeto", miServicioService.operacion());
+		return "index";
+	}
+}

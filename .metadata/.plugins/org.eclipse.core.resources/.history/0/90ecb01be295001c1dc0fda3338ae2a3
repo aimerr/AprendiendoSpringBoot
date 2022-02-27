@@ -1,0 +1,5 @@
+package com.aprendiendo.springboot.web.app;
+
+public class TextosPropertiesConfig {
+
+}

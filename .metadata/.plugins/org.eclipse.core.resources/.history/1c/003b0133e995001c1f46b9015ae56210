@@ -1,0 +1,9 @@
+package com.aprendiendo.springboot.di.app.services;
+
+public class MiServicioService {
+
+	public String operacion() {
+		
+		return "ejecutando algún proceso importante...";
+	}
+}

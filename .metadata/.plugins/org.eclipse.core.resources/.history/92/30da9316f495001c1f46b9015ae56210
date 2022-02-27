@@ -1,0 +1,16 @@
+package com.aprendiendo.springboot.di.app;
+
+import org.springframework.context.annotation.Configuration;
+
+import com.aprendiendo.springboot.di.app.services.IMiServicio;
+import com.aprendiendo.springboot.di.app.services.PojoServicioService;
+
+@Configuration
+public class AppConfig {
+
+	public IMiServicio registrarMiervicio() {
+		
+		return new PojoServicioService();
+	}
+	
+}

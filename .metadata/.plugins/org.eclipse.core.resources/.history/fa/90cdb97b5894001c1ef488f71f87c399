@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Enviar parametros de la ruta @PathVariable</title>
+</head>
+<body>
+<h2>Enviar parametros de la ruta @PathVariable</h2>
+
+<ul>
+<li>
+	<a th:href="@{/variables/string/}+'Hola-Aimer'">/variables/string/Hola-Aimer</a>
+</li>
+<li>
+	<a th:href="@{/variables/string/}+${'Hola-Aimer'}+${'/'+28}">/variables/string/Hola-Aimer/28</a>
+</li>
+
+</ul>
+
+</body>
+</html>

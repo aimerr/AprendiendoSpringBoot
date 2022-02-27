@@ -1,0 +1,14 @@
+package com.aprendiendo.springboot.di.app;
+
+import org.springframework.context.annotation.Configuration;
+
+import com.aprendiendo.springboot.di.app.services.IMiServicio;
+
+@Configuration
+public class AppConfig {
+
+	public IMiServicio registrarMiervicio() {
+		
+	}
+	
+}

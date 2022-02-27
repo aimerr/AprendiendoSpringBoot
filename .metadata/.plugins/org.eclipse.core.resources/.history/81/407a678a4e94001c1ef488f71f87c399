@@ -1,0 +1,39 @@
+package com.aprendiendo.springboot.web.app.models;
+
+public class Usuario {
+
+	private String usuario;
+	private String apellido;
+	private String email;
+	
+	public Usuario() {
+	}
+	
+	
+	public Usuario(String usuario, String apellido, String email) {
+		super();
+		this.usuario = usuario;
+		this.apellido = apellido;
+		this.email = email;
+	}
+	public String getUsuario() {
+		return usuario;
+	}
+	public void setUsuario(String usuario) {
+		this.usuario = usuario;
+	}
+	public String getApellido() {
+		return apellido;
+	}
+	public void setApellido(String apellido) {
+		this.apellido = apellido;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
+	
+}
